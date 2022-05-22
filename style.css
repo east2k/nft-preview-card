@@ -37,11 +37,15 @@
 }
 
 .card-container {
-    width: 320px;
-    height: 550px;
+    position: relative;
+    width: 330px;
+    height: 565px;
     background-color: var(--card-dark-blue);
     border-radius: 10px;
+    z-index: 1;
 }
+
+/* 0c1729 */
 
 .card-content {
     width: 100%;
@@ -55,13 +59,13 @@
 
 .card-img img {
     border-radius: 5px;
-    width: 280px;
+    width: 290px;
     height: auto;
 }
 
 .card-body {
     border-bottom: 1px solid var(--line-dark-blue);
-    padding-bottom: 25px;
+    padding-bottom: 20px;
 }
 
 .card-header {
@@ -73,6 +77,7 @@
     font-size: var(--regular-text);
     color: var(--soft-blue);
     margin-bottom: 20px;
+    font-weight: 300;
 }
 
 .card-details {
@@ -90,6 +95,7 @@
     color: var(--cyan);
     height: 25px;
     gap: 5px;
+    font-weight: 600;
 }
 
 /* .card-price::before{
@@ -104,9 +110,40 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
+    font-weight: 400;
 }
 
 /* .card-time::before{
     content: url("images/icon-clock.svg");
     margin-right: 5px;
 } */
+
+.card-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    height: 50px;
+    margin-top: 5px;
+}
+
+.card-profile {
+    display: flex;
+}
+
+.card-profile img {
+    width: auto;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.card-name {
+    color: var(--soft-blue);
+    font-weight: 400;
+}
+
+.card-name p span {
+    color: var(--white);
+}
