@@ -6,13 +6,15 @@
 
     --bg-dark-blue: hsl(217, 54%, 11%);
     --card-dark-blue: hsl(216, 50%, 16%);
-    --line-dark-blue: (line): hsl(215, 32%, 27%);
+    --line-dark-blue: hsl(215, 32%, 27%);
     --white: hsl(0, 0%, 100%);
 
     --regular-text: 18px;
 
     --min-width-wrapper: 375px;
     --max-width-wrapper: 1440px;
+
+    --margin-separator: 15px;
 }
 
 * {
@@ -21,3 +23,90 @@
     padding: 0;
     margin: 0;
 }
+
+.card-wrapper {
+    background-color: var(--bg-dark-blue);
+    width: 100%;
+    max-width: var(--max-width-wrapper);
+    height: 100vh;
+    max-height: 960px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-container {
+    width: 320px;
+    height: 550px;
+    background-color: var(--card-dark-blue);
+    border-radius: 10px;
+}
+
+.card-content {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.card-img {
+    margin-bottom: var(--margin-separator);
+}
+
+.card-img img {
+    border-radius: 5px;
+    width: 280px;
+    height: auto;
+}
+
+.card-body {
+    border-bottom: 1px solid var(--line-dark-blue);
+    padding-bottom: 25px;
+}
+
+.card-header {
+    color: var(--white);
+    margin-bottom: var(--margin-separator);
+}
+
+.card-paragraph {
+    font-size: var(--regular-text);
+    color: var(--soft-blue);
+    margin-bottom: 20px;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: var(--cyan);
+    height: 25px;
+    gap: 5px;
+}
+
+/* .card-price::before{
+    content: url("images/icon-ethereum.svg");
+    margin-right: 5px;
+} */
+
+.card-time {
+    color: var(--soft-blue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+/* .card-time::before{
+    content: url("images/icon-clock.svg");
+    margin-right: 5px;
+} */
